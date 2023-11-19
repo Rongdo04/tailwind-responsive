@@ -3,13 +3,16 @@ function handleResize() {
   var screenHeight = window.innerHeight;
 
   var container = document.querySelector(".container");
-  console.log(container);
-  if (screenWidth <= 440 && screenHeight <= 940) {
+
+  console.log(screenWidth);
+  console.log(innerHeight);
+
+  if (screenWidth <= 470 && screenHeight <= 1010) {
     // Remove the class when conditions are met
     container.classList.remove("px-52");
-    container.classList.add("px-10");
   } else {
     // Add the class back when conditions are not met
+
     container.classList.add("px-52");
   }
 }
